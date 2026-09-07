@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/*
+ * The bank's own palette. Named for what each colour means, not what it
+ * looks like — bad is not simply red, it is the colour of a failure.
+ */
+@theme {
+  --color-ink: #101820;
+  --color-navy: #0b2e4f;
+  --color-brand: #0072ce;
+  --color-sky: #38bdf8;
+  --color-muted: #56636f;
+  --color-rule: #dce3e8;
+  --color-panel: #f3f6f8;
+  --color-good: #00875a;
+  --color-bad: #d7263d;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+/*
+ * shadcn/ui's semantic tokens, mapped onto the bank palette above rather than
+ * shadcn's default neutral one. Every shadcn component (Button, Card, Input,
+ * Table, ...) reads only these names — bg-primary, text-muted-foreground,
+ * border-input — so the whole library re-skins from these ten lines, and
+ * never needs a hex value edited inside components/ui/.
+ */
+:root {
+  --background: #ffffff;
+  --foreground: var(--color-ink);
+  --card: #ffffff;
+  --card-foreground: var(--color-ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-brand);
+  --primary-foreground: #ffffff;
+  --secondary: var(--color-panel);
+  --secondary-foreground: var(--color-ink);
+  --muted: var(--color-panel);
+  --muted-foreground: var(--color-muted);
+  --accent: var(--color-panel);
+  --accent-foreground: var(--color-ink);
+  --destructive: var(--color-bad);
+  --border: var(--color-rule);
+  --input: var(--color-rule);
+  --ring: var(--color-brand);
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

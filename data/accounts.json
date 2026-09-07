@@ -1,0 +1,29 @@
+[
+  {
+    "accountNumber": "DKI-1029384",
+    "customerNik": "3171012345670001",
+    "customerName": "Nasabah Sample DKI",
+    "balance": 500000,
+    "currency": "IDR",
+    "status": "ACTIVE",
+    "createdAt": "2026-08-31T09:00:00+07:00"
+  },
+  {
+    "accountNumber": "DKI-1029385",
+    "customerNik": "3171012345670002",
+    "customerName": "Siti Rahmawati",
+    "balance": 2750000,
+    "currency": "IDR",
+    "status": "ACTIVE",
+    "createdAt": "2026-09-01T10:15:00+07:00"
+  },
+  {
+    "accountNumber": "DKI-1029386",
+    "customerNik": "3171012345670003",
+    "customerName": "Bagus Pratama",
+    "balance": 0,
+    "currency": "IDR",
+    "status": "ACTIVE",
+    "createdAt": "2026-09-02T14:40:00+07:00"
+  }
+]
